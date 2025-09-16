@@ -1,0 +1,13 @@
+name: Deploy Branch demo   
+on:
+  push:
+    tags:
+      - demo-*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Version
+        run: echo "Version: ${{ github.ref_name }}"
+  
