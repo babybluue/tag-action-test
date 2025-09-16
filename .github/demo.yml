@@ -1,8 +1,8 @@
-name: Deploy Branch main
+name: Deploy Branch demo
 on:
   push:
     tags:
-      - main-*
+      - demo-*
 
 jobs:
   build:
